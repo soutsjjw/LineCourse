@@ -9,15 +9,18 @@
   $sender_txt = $json_obj->events[0]->message->text; //取得訊息內容
   $sender_replyToken = $json_obj->events[0]->replyToken; //取得訊息的replyToken
   
-  $response = array (
-    "replyToken" => $sender_replyToken,
-    "messages" => array (
-      array (
-        "type" => "text",
-        "text" => "Hello. You say". $sender_txt
-      )
-    )
-  );
+ $response = array (
+		"replyToken" => $sender_replyToken,
+		"messages" => array (
+		  array (
+							"type" => "location",
+							"title" => "my location",
+							"address" => "〒150-0002 東京都渋谷区渋谷２丁目２１−１",
+							"latitude" => 35.65910807942215,
+							"longitude" => 139.70372892916203
+			)
+		)
+	);
   
  fwrite($myfile, "\xEF\xBB\xBF".json_encode($response)); //在字串前面加上\xEF\xBB\xBF轉成utf8格式
   $header[] = "Content-Type: application/json";
