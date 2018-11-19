@@ -13,7 +13,7 @@
     "messages" => array (
       array (
         "type" => "text",
-        "text" => "Hello. You say". $sender_txt
+        "text" => "Hello. You say ". $sender_txt
       )
     )
   );
