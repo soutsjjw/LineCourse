@@ -58,8 +58,9 @@
 	"messages" => array (
 	  array (
 		"type" => "text",
-		"text" => $ans_txt
+		// "text" => $ans_txt
 		// "text" => $result -> responses[0] -> fullTextAnnotation -> text
+		  "text" => $result
 	  )
 	)
   );
