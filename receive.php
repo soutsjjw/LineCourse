@@ -28,7 +28,7 @@
 	  array (
 		"image" => array (
 		  "source" => array (
-			"imageUri" => "http://139.59.123.8/class/learning/".$imageId.".jpeg"
+			"imageUri" => "http://139.59.123.8/class/soutsLineCourse/".$imageId.".jpeg"
 		  )
 		),
 		"features" => array (
