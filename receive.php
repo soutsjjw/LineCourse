@@ -49,7 +49,7 @@
   $result_ary = mb_split("\n",$result -> responses[0] -> fullTextAnnotation -> text);
   $ans_txt = "這張發票沒用了，你又製造了一張垃圾";
   foreach ($result_ary as $val) {
-	if($val == "JS-07510912"){
+	if ($val == "KR-33501639") { // if($val == "JS-07510912"){
 	  $ans_txt = "恭喜您中獎啦，快分紅!!";
 	}
   }
